@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage
+    SchemaVersion="1.0"
+    AutodeskProduct="Inventor"
+    Name="Inventor_DaeConverter"
+    Description="DAE Exporter for Inventor"
+    AppVersion="1.0.0"
+    ProductType="Application"
+    SupportedLocales="Enu">
+
+  <Components Description="Contents">
+
+    <!-- Soporte de Inventor 2013 (Ir17) a 2027 (Ir31) -->
+    <RuntimeRequirements 
+        OS="Win32|Win64" 
+        Platform="Inventor"
+        SeriesMin="Ir17"
+        SeriesMax="Ir31" />
+
+    <!-- (Opcional) el .addin dentro del bundle, útil si algún día empaquetas para AppStore -->
+    <ComponentEntry
+        AppName="DaeConverterAddinConfig"
+        Version="1.0.0"
+        ModuleName="./Contents/InventorDaeConverter.Inventor.addin"
+        AppDescription="DAE Converter Add-In registration file" />
+
+    <!-- El DLL con StandardAddInServer -->
+    <ComponentEntry
+        AppName="DaeConverterAddin"
+        Version="1.0.0"
+        ModuleName="./Contents/InventorDaeConverter.dll"
+        AppDescription="DAE Converter Add-In core assembly" />
+
+  </Components>
+
+</ApplicationPackage>

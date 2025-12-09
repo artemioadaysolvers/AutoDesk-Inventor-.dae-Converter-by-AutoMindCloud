@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin Type="Standard">
+  <!-- Mismo GUID que en StandardAddInServer.cs -->
+  <ClassId>{4aba8fec-e1bf-4786-ba37-6163b7bc0953}</ClassId>
+  <ClientId>{4aba8fec-e1bf-4786-ba37-6163b7bc0953}</ClientId>
+
+  <DisplayName>Inventor DAE Converter</DisplayName>
+  <Description>Exporta piezas y ensamblajes de Inventor a COLLADA (.dae)</Description>
+
+  <!-- Ruta al DLL dentro del .bundle -->
+  <Assembly>C:\Users\Asus\AppData\Roaming\Autodesk\ApplicationPlugins\Inventor_Dae_Converter.bundle\Contents\InventorDaeConverter.dll</Assembly>
+
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <Hidden>0</Hidden>
+</Addin>
